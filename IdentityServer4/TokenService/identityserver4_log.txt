@@ -1,0 +1,383 @@
+2019-11-26 11:50:07.910 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 11:50:07.944 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 11:50:07.950 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 11:50:07.950 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 11:50:07.950 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 11:50:07.950 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 11:50:07.950 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 11:50:07.950 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 11:50:08.216 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 11:50:08.217 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 11:50:08.217 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 11:50:08.217 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 11:50:08.217 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 11:50:08.217 +01:00 [DBG] Error Url: /home/error
+2019-11-26 11:50:08.217 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 11:50:41.597 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 11:50:41.605 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 11:50:41.605 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 11:50:41.611 +01:00 [DBG] Start token request.
+2019-11-26 11:50:41.615 +01:00 [DBG] Start client validation
+2019-11-26 11:50:41.618 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 11:50:41.621 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 11:50:41.633 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 11:50:41.633 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 11:50:41.644 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 11:50:41.660 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 11:50:41.660 +01:00 [DBG] Client validation success
+2019-11-26 11:50:41.690 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIBPJK2F0R:00000002","TimeStamp":"2019-11-26T10:50:41.0000000Z","ProcessId":14688,"LocalIpAddress":"127.0.0.1:26013","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 11:50:41.716 +01:00 [DBG] Start token request validation
+2019-11-26 11:50:41.724 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 11:50:41.748 +01:00 [DBG] IsActive called from: ResourceOwnerValidation
+2019-11-26 11:50:41.749 +01:00 [INF] {"Username":"demo","Provider":null,"ProviderUserId":null,"SubjectId":"1","DisplayName":null,"Endpoint":"Token","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLRIBPJK2F0R:00000002","TimeStamp":"2019-11-26T10:50:41.0000000Z","ProcessId":14688,"LocalIpAddress":"127.0.0.1:26013","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-11-26 11:50:41.749 +01:00 [DBG] Resource owner password token request validation success.
+2019-11-26 11:50:41.754 +01:00 [INF] Token request validation success
+{"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"demo","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"demo","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 11:50:41.769 +01:00 [DBG] Getting claims for access token for client: ConsoleApp_ClientId
+2019-11-26 11:50:41.770 +01:00 [DBG] Getting claims for access token for subject: 1
+2019-11-26 11:50:41.773 +01:00 [DBG] Get profile called for subject 1 from client ConsoleApp_ClientId with claim types [] via ClaimsProviderAccessToken
+2019-11-26 11:50:41.775 +01:00 [DBG] Issued claims: []
+2019-11-26 11:50:41.794 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":"1","Scopes":"ApiName","GrantType":"password","Tokens":[{"TokenType":"access_token","TokenValue":"****c846","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLRIBPJK2F0R:00000002","TimeStamp":"2019-11-26T10:50:41.0000000Z","ProcessId":14688,"LocalIpAddress":"127.0.0.1:26013","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-11-26 11:50:41.795 +01:00 [DBG] Token request success.
+2019-11-26 11:50:42.082 +01:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-11-26 11:50:42.082 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-11-26 11:50:42.082 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-11-26 11:50:42.085 +01:00 [DBG] Start discovery request
+2019-11-26 11:50:42.124 +01:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-11-26 11:50:42.124 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-11-26 11:50:42.124 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-11-26 11:50:42.128 +01:00 [DBG] Start key discovery request
+2019-11-26 11:50:42.207 +01:00 [DBG] Request path /connect/introspect matched to endpoint type Introspection
+2019-11-26 11:50:42.208 +01:00 [DBG] Endpoint enabled: Introspection, successfully created handler: IdentityServer4.Endpoints.IntrospectionEndpoint
+2019-11-26 11:50:42.208 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.IntrospectionEndpoint for /connect/introspect
+2019-11-26 11:50:42.213 +01:00 [DBG] Starting introspection request.
+2019-11-26 11:50:42.216 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 11:50:42.216 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 11:50:42.217 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 11:50:42.217 +01:00 [DBG] Secret id found: ApiName
+2019-11-26 11:50:42.217 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 11:50:42.217 +01:00 [DBG] API resource validation success
+2019-11-26 11:50:42.217 +01:00 [INF] {"ApiName":"ApiName","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"API Authentication Success","EventType":"Success","Id":1020,"Message":null,"ActivityId":"0HLRIBPJK2F0S:00000003","TimeStamp":"2019-11-26T10:50:42.0000000Z","ProcessId":14688,"LocalIpAddress":"127.0.0.1:26013","RemoteIpAddress":"::1","$type":"ApiAuthenticationSuccessEvent"}
+2019-11-26 11:50:42.219 +01:00 [DBG] Introspection request validation started.
+2019-11-26 11:50:42.233 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 11:50:42.236 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 11:50:42.236 +01:00 [DBG] IsActive called from: AccessTokenValidation
+2019-11-26 11:50:42.236 +01:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-11-26 11:50:42.237 +01:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Reference","ExpectedScope":null,"TokenHandle":"91a9d9869a66043ed4dbfa44d8e46104abc795ebd907ee6c31bc5724e0c1c846","JwtId":null,"Claims":{"iss":"http://localhost:5000","nbf":1574765441,"exp":1574769041,"aud":["http://localhost:5000/resources","ApiName"],"client_id":"ConsoleApp_ClientId","scope":"ApiName","sub":"1","auth_time":1574765441,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-11-26 11:50:42.237 +01:00 [DBG] Introspection request validation successful.
+2019-11-26 11:50:42.243 +01:00 [DBG] Creating introspection response for active token.
+2019-11-26 11:50:42.245 +01:00 [INF] {"ApiName":"ApiName","IsActive":true,"Token":"****c846","ClaimTypes":["iss","nbf","exp","aud","client_id","scope","sub","auth_time","idp","amr"],"TokenScopes":["ApiName"],"Category":"Token","Name":"Token Introspection Success","EventType":"Success","Id":2020,"Message":null,"ActivityId":"0HLRIBPJK2F0S:00000003","TimeStamp":"2019-11-26T10:50:42.0000000Z","ProcessId":14688,"LocalIpAddress":"127.0.0.1:26013","RemoteIpAddress":"::1","$type":"TokenIntrospectionSuccessEvent"}
+2019-11-26 11:50:42.245 +01:00 [INF] Success token introspection. Token active: true, for API name: ApiName
+2019-11-26 14:02:23.792 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 14:02:23.823 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 14:02:23.829 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 14:02:23.830 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 14:02:23.830 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 14:02:23.830 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 14:02:23.830 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 14:02:23.830 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 14:02:24.182 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 14:02:24.183 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 14:02:24.183 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 14:02:24.183 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 14:02:24.183 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 14:02:24.183 +01:00 [DBG] Error Url: /home/error
+2019-11-26 14:02:24.183 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 14:02:57.277 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 14:02:57.285 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 14:02:57.285 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 14:02:57.291 +01:00 [DBG] Start token request.
+2019-11-26 14:02:57.295 +01:00 [DBG] Start client validation
+2019-11-26 14:02:57.299 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:02:57.302 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:02:57.313 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:02:57.313 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 14:02:57.321 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:02:57.327 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:02:57.327 +01:00 [DBG] Client validation success
+2019-11-26 14:02:57.351 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIE3GMU21H:00000002","TimeStamp":"2019-11-26T13:02:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 14:02:57.378 +01:00 [DBG] Start token request validation
+2019-11-26 14:02:57.386 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 14:02:57.410 +01:00 [DBG] IsActive called from: ResourceOwnerValidation
+2019-11-26 14:02:57.411 +01:00 [INF] {"Username":"demo","Provider":null,"ProviderUserId":null,"SubjectId":"1","DisplayName":null,"Endpoint":"Token","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLRIE3GMU21H:00000002","TimeStamp":"2019-11-26T13:02:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-11-26 14:02:57.411 +01:00 [DBG] Resource owner password token request validation success.
+2019-11-26 14:02:57.417 +01:00 [INF] Token request validation success
+{"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"demo","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"demo","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 14:02:57.433 +01:00 [DBG] Getting claims for access token for client: ConsoleApp_ClientId
+2019-11-26 14:02:57.433 +01:00 [DBG] Getting claims for access token for subject: 1
+2019-11-26 14:02:57.437 +01:00 [DBG] Get profile called for subject 1 from client ConsoleApp_ClientId with claim types [] via ClaimsProviderAccessToken
+2019-11-26 14:02:57.439 +01:00 [DBG] Issued claims: []
+2019-11-26 14:02:57.459 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":"1","Scopes":"ApiName","GrantType":"password","Tokens":[{"TokenType":"access_token","TokenValue":"****0cd8","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLRIE3GMU21H:00000002","TimeStamp":"2019-11-26T13:02:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-11-26 14:02:57.460 +01:00 [DBG] Token request success.
+2019-11-26 14:02:57.715 +01:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-11-26 14:02:57.718 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-11-26 14:02:57.718 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-11-26 14:02:57.721 +01:00 [DBG] Start discovery request
+2019-11-26 14:02:57.759 +01:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-11-26 14:02:57.759 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-11-26 14:02:57.759 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-11-26 14:02:57.762 +01:00 [DBG] Start key discovery request
+2019-11-26 14:02:57.850 +01:00 [DBG] Request path /connect/introspect matched to endpoint type Introspection
+2019-11-26 14:02:57.850 +01:00 [DBG] Endpoint enabled: Introspection, successfully created handler: IdentityServer4.Endpoints.IntrospectionEndpoint
+2019-11-26 14:02:57.850 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.IntrospectionEndpoint for /connect/introspect
+2019-11-26 14:02:57.859 +01:00 [DBG] Starting introspection request.
+2019-11-26 14:02:57.863 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:02:57.863 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:02:57.863 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:02:57.863 +01:00 [DBG] Secret id found: ApiName
+2019-11-26 14:02:57.864 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:02:57.864 +01:00 [DBG] API resource validation success
+2019-11-26 14:02:57.864 +01:00 [INF] {"ApiName":"ApiName","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"API Authentication Success","EventType":"Success","Id":1020,"Message":null,"ActivityId":"0HLRIE3GMU21I:00000003","TimeStamp":"2019-11-26T13:02:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"ApiAuthenticationSuccessEvent"}
+2019-11-26 14:02:57.866 +01:00 [DBG] Introspection request validation started.
+2019-11-26 14:02:57.880 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:02:57.883 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:02:57.884 +01:00 [DBG] IsActive called from: AccessTokenValidation
+2019-11-26 14:02:57.884 +01:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-11-26 14:02:57.885 +01:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Reference","ExpectedScope":null,"TokenHandle":"3b8f6726b8905b3bcb68b461f6f31665d2f6c09c96e2f52eaf68274a59bc0cd8","JwtId":null,"Claims":{"iss":"http://localhost:5000","nbf":1574773377,"exp":1574776977,"aud":["http://localhost:5000/resources","ApiName"],"client_id":"ConsoleApp_ClientId","scope":"ApiName","sub":"1","auth_time":1574773377,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-11-26 14:02:57.885 +01:00 [DBG] Introspection request validation successful.
+2019-11-26 14:02:57.891 +01:00 [DBG] Creating introspection response for active token.
+2019-11-26 14:02:57.893 +01:00 [INF] {"ApiName":"ApiName","IsActive":true,"Token":"****0cd8","ClaimTypes":["iss","nbf","exp","aud","client_id","scope","sub","auth_time","idp","amr"],"TokenScopes":["ApiName"],"Category":"Token","Name":"Token Introspection Success","EventType":"Success","Id":2020,"Message":null,"ActivityId":"0HLRIE3GMU21I:00000003","TimeStamp":"2019-11-26T13:02:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"TokenIntrospectionSuccessEvent"}
+2019-11-26 14:02:57.893 +01:00 [INF] Success token introspection. Token active: true, for API name: ApiName
+2019-11-26 14:03:57.432 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 14:03:57.433 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 14:03:57.433 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 14:03:57.433 +01:00 [DBG] Start token request.
+2019-11-26 14:03:57.433 +01:00 [DBG] Start client validation
+2019-11-26 14:03:57.433 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:03:57.433 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:03:57.433 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:03:57.433 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 14:03:57.433 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:03:57.433 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:03:57.433 +01:00 [DBG] Client validation success
+2019-11-26 14:03:57.433 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIE3GMU21H:00000004","TimeStamp":"2019-11-26T13:03:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 14:03:57.433 +01:00 [DBG] Start token request validation
+2019-11-26 14:03:57.433 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 14:03:57.434 +01:00 [INF] User authentication failed: ["invalid_username_or_password"], request details: {"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"deee","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"deee","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 14:03:57.434 +01:00 [INF] {"Username":"deee","Endpoint":"UI","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid_username_or_password","ActivityId":"0HLRIE3GMU21H:00000004","TimeStamp":"2019-11-26T13:03:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2019-11-26 14:03:57.436 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"ApiName","GrantType":"password","Error":"invalid_grant","ErrorDescription":"invalid_username_or_password","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLRIE3GMU21H:00000004","TimeStamp":"2019-11-26T13:03:57.0000000Z","ProcessId":10964,"LocalIpAddress":"127.0.0.1:19100","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-11-26 14:10:30.109 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 14:10:30.142 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 14:10:30.149 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 14:10:30.149 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 14:10:30.149 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 14:10:30.149 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 14:10:30.149 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 14:10:30.149 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 14:10:30.401 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 14:10:30.403 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 14:10:30.403 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 14:10:30.403 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 14:10:30.403 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 14:10:30.403 +01:00 [DBG] Error Url: /home/error
+2019-11-26 14:10:30.403 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 14:11:00.885 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 14:11:00.893 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 14:11:00.893 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 14:11:00.899 +01:00 [DBG] Start token request.
+2019-11-26 14:11:00.903 +01:00 [DBG] Start client validation
+2019-11-26 14:11:00.906 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:11:00.908 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:11:00.919 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:11:00.920 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 14:11:00.928 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:11:00.933 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:11:00.933 +01:00 [DBG] Client validation success
+2019-11-26 14:11:00.949 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIE81K9ONA:00000002","TimeStamp":"2019-11-26T13:11:00.0000000Z","ProcessId":16924,"LocalIpAddress":"127.0.0.1:43945","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 14:11:00.968 +01:00 [DBG] Start token request validation
+2019-11-26 14:11:00.976 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 14:11:01.005 +01:00 [INF] User authentication failed: ["invalid_username_or_password"], request details: {"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"123","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"123","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 14:11:01.007 +01:00 [INF] {"Username":"123","Endpoint":"UI","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid_username_or_password","ActivityId":"0HLRIE81K9ONA:00000002","TimeStamp":"2019-11-26T13:11:01.0000000Z","ProcessId":16924,"LocalIpAddress":"127.0.0.1:43945","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2019-11-26 14:11:01.008 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"ApiName","GrantType":"password","Error":"invalid_grant","ErrorDescription":"invalid_username_or_password","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLRIE81K9ONA:00000002","TimeStamp":"2019-11-26T13:11:01.0000000Z","ProcessId":16924,"LocalIpAddress":"127.0.0.1:43945","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-11-26 14:11:34.069 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 14:11:34.108 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 14:11:34.116 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 14:11:34.116 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 14:11:34.116 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 14:11:34.116 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 14:11:34.116 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 14:11:34.116 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 14:11:34.325 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 14:11:34.326 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 14:11:34.326 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 14:11:34.326 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 14:11:34.326 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 14:11:34.326 +01:00 [DBG] Error Url: /home/error
+2019-11-26 14:11:34.326 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 14:11:47.584 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 14:11:47.591 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 14:11:47.591 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 14:11:47.597 +01:00 [DBG] Start token request.
+2019-11-26 14:11:47.601 +01:00 [DBG] Start client validation
+2019-11-26 14:11:47.605 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:11:47.607 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:11:47.619 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:11:47.619 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 14:11:47.627 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:11:47.633 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:11:47.633 +01:00 [DBG] Client validation success
+2019-11-26 14:11:47.650 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIE8KLQBUO:00000002","TimeStamp":"2019-11-26T13:11:47.0000000Z","ProcessId":11380,"LocalIpAddress":"127.0.0.1:11812","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 14:11:47.669 +01:00 [DBG] Start token request validation
+2019-11-26 14:11:47.677 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 14:11:47.701 +01:00 [DBG] IsActive called from: ResourceOwnerValidation
+2019-11-26 14:11:47.702 +01:00 [INF] {"Username":"123","Provider":null,"ProviderUserId":null,"SubjectId":"1","DisplayName":null,"Endpoint":"Token","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLRIE8KLQBUO:00000002","TimeStamp":"2019-11-26T13:11:47.0000000Z","ProcessId":11380,"LocalIpAddress":"127.0.0.1:11812","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-11-26 14:11:47.702 +01:00 [DBG] Resource owner password token request validation success.
+2019-11-26 14:11:47.708 +01:00 [INF] Token request validation success
+{"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"123","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"123","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 14:11:47.723 +01:00 [DBG] Getting claims for access token for client: ConsoleApp_ClientId
+2019-11-26 14:11:47.724 +01:00 [DBG] Getting claims for access token for subject: 1
+2019-11-26 14:11:47.728 +01:00 [DBG] Get profile called for subject 1 from client ConsoleApp_ClientId with claim types [] via ClaimsProviderAccessToken
+2019-11-26 14:11:47.729 +01:00 [DBG] Issued claims: []
+2019-11-26 14:11:47.749 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":"1","Scopes":"ApiName","GrantType":"password","Tokens":[{"TokenType":"access_token","TokenValue":"****235f","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLRIE8KLQBUO:00000002","TimeStamp":"2019-11-26T13:11:47.0000000Z","ProcessId":11380,"LocalIpAddress":"127.0.0.1:11812","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-11-26 14:11:47.750 +01:00 [DBG] Token request success.
+2019-11-26 14:11:47.947 +01:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-11-26 14:11:47.947 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-11-26 14:11:47.947 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-11-26 14:11:47.950 +01:00 [DBG] Start discovery request
+2019-11-26 14:11:47.991 +01:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-11-26 14:11:47.992 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-11-26 14:11:47.992 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-11-26 14:11:47.994 +01:00 [DBG] Start key discovery request
+2019-11-26 14:11:48.078 +01:00 [DBG] Request path /connect/introspect matched to endpoint type Introspection
+2019-11-26 14:11:48.079 +01:00 [DBG] Endpoint enabled: Introspection, successfully created handler: IdentityServer4.Endpoints.IntrospectionEndpoint
+2019-11-26 14:11:48.079 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.IntrospectionEndpoint for /connect/introspect
+2019-11-26 14:11:48.085 +01:00 [DBG] Starting introspection request.
+2019-11-26 14:11:48.088 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:11:48.089 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:11:48.089 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:11:48.089 +01:00 [DBG] Secret id found: ApiName
+2019-11-26 14:11:48.089 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:11:48.089 +01:00 [DBG] API resource validation success
+2019-11-26 14:11:48.090 +01:00 [INF] {"ApiName":"ApiName","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"API Authentication Success","EventType":"Success","Id":1020,"Message":null,"ActivityId":"0HLRIE8KLQBUP:00000003","TimeStamp":"2019-11-26T13:11:48.0000000Z","ProcessId":11380,"LocalIpAddress":"127.0.0.1:11812","RemoteIpAddress":"::1","$type":"ApiAuthenticationSuccessEvent"}
+2019-11-26 14:11:48.092 +01:00 [DBG] Introspection request validation started.
+2019-11-26 14:11:48.106 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:11:48.109 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:11:48.109 +01:00 [DBG] IsActive called from: AccessTokenValidation
+2019-11-26 14:11:48.109 +01:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-11-26 14:11:48.110 +01:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Reference","ExpectedScope":null,"TokenHandle":"a3871037ea39583b571ad5e80b3828c9c0b9f39e2f27c70d30b7584ce479235f","JwtId":null,"Claims":{"iss":"http://localhost:5000","nbf":1574773907,"exp":1574777507,"aud":["http://localhost:5000/resources","ApiName"],"client_id":"ConsoleApp_ClientId","scope":"ApiName","sub":"1","auth_time":1574773907,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-11-26 14:11:48.110 +01:00 [DBG] Introspection request validation successful.
+2019-11-26 14:11:48.116 +01:00 [DBG] Creating introspection response for active token.
+2019-11-26 14:11:48.117 +01:00 [INF] {"ApiName":"ApiName","IsActive":true,"Token":"****235f","ClaimTypes":["iss","nbf","exp","aud","client_id","scope","sub","auth_time","idp","amr"],"TokenScopes":["ApiName"],"Category":"Token","Name":"Token Introspection Success","EventType":"Success","Id":2020,"Message":null,"ActivityId":"0HLRIE8KLQBUP:00000003","TimeStamp":"2019-11-26T13:11:48.0000000Z","ProcessId":11380,"LocalIpAddress":"127.0.0.1:11812","RemoteIpAddress":"::1","$type":"TokenIntrospectionSuccessEvent"}
+2019-11-26 14:11:48.117 +01:00 [INF] Success token introspection. Token active: true, for API name: ApiName
+2019-11-26 14:18:08.686 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 14:18:08.724 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 14:18:08.731 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 14:18:08.731 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 14:18:08.731 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 14:18:08.731 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 14:18:08.731 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 14:18:08.731 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 14:18:08.971 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 14:18:08.973 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 14:18:08.973 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 14:18:08.974 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 14:18:08.974 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 14:18:08.974 +01:00 [DBG] Error Url: /home/error
+2019-11-26 14:18:08.974 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 14:20:57.621 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 14:20:57.662 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 14:20:57.669 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 14:20:57.669 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 14:20:57.669 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 14:20:57.669 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 14:20:57.669 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 14:20:57.669 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 14:20:57.868 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 14:20:57.869 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 14:20:57.869 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 14:20:57.869 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 14:20:57.869 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 14:20:57.870 +01:00 [DBG] Error Url: /home/error
+2019-11-26 14:20:57.870 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 14:25:21.929 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 14:25:21.937 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 14:25:21.937 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 14:25:21.942 +01:00 [DBG] Start token request.
+2019-11-26 14:25:21.946 +01:00 [DBG] Start client validation
+2019-11-26 14:25:21.950 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:25:21.952 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:25:21.963 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:25:21.963 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 14:25:21.971 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:25:21.977 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:25:21.977 +01:00 [DBG] Client validation success
+2019-11-26 14:25:22.000 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIEDSK5SQE:00000001","TimeStamp":"2019-11-26T13:25:21.0000000Z","ProcessId":13128,"LocalIpAddress":"127.0.0.1:6771","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 14:25:22.019 +01:00 [DBG] Start token request validation
+2019-11-26 14:25:22.026 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 14:25:22.053 +01:00 [INF] User authentication failed: ["invalid_username_or_password"], request details: {"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"123","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"123","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 14:25:22.056 +01:00 [INF] {"Username":"123","Endpoint":"UI","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid_username_or_password","ActivityId":"0HLRIEDSK5SQE:00000001","TimeStamp":"2019-11-26T13:25:22.0000000Z","ProcessId":13128,"LocalIpAddress":"127.0.0.1:6771","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2019-11-26 14:25:22.057 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"ApiName","GrantType":"password","Error":"invalid_grant","ErrorDescription":"invalid_username_or_password","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLRIEDSK5SQE:00000001","TimeStamp":"2019-11-26T13:25:22.0000000Z","ProcessId":13128,"LocalIpAddress":"127.0.0.1:6771","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-11-26 14:30:38.834 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-26 14:30:38.875 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-11-26 14:30:38.884 +01:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-11-26 14:30:38.884 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-11-26 14:30:38.884 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-11-26 14:30:38.884 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-11-26 14:30:38.884 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-11-26 14:30:38.884 +01:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-11-26 14:30:39.071 +01:00 [DBG] Login Url: /Account/Login
+2019-11-26 14:30:39.073 +01:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-11-26 14:30:39.073 +01:00 [DBG] Logout Url: /Account/Logout
+2019-11-26 14:30:39.073 +01:00 [DBG] ConsentUrl Url: /consent
+2019-11-26 14:30:39.073 +01:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-11-26 14:30:39.073 +01:00 [DBG] Error Url: /home/error
+2019-11-26 14:30:39.073 +01:00 [DBG] Error Id Parameter: errorId
+2019-11-26 14:30:54.311 +01:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-11-26 14:30:54.320 +01:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-11-26 14:30:54.320 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-11-26 14:30:54.327 +01:00 [DBG] Start token request.
+2019-11-26 14:30:54.331 +01:00 [DBG] Start client validation
+2019-11-26 14:30:54.334 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:30:54.337 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:30:54.349 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:30:54.349 +01:00 [DBG] Secret id found: ConsoleApp_ClientId
+2019-11-26 14:30:54.357 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:30:54.363 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:30:54.363 +01:00 [DBG] Client validation success
+2019-11-26 14:30:54.380 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLRIEJ9R0JMH:00000002","TimeStamp":"2019-11-26T13:30:54.0000000Z","ProcessId":4516,"LocalIpAddress":"127.0.0.1:9807","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-11-26 14:30:54.399 +01:00 [DBG] Start token request validation
+2019-11-26 14:30:54.407 +01:00 [DBG] Start resource owner password token request validation
+2019-11-26 14:30:54.432 +01:00 [DBG] IsActive called from: ResourceOwnerValidation
+2019-11-26 14:30:54.434 +01:00 [INF] {"Username":"123","Provider":null,"ProviderUserId":null,"SubjectId":"1","DisplayName":null,"Endpoint":"Token","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLRIEJ9R0JMH:00000002","TimeStamp":"2019-11-26T13:30:54.0000000Z","ProcessId":4516,"LocalIpAddress":"127.0.0.1:9807","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-11-26 14:30:54.434 +01:00 [DBG] Resource owner password token request validation success.
+2019-11-26 14:30:54.440 +01:00 [INF] Token request validation success
+{"ClientId":"ConsoleApp_ClientId","ClientName":null,"GrantType":"password","Scopes":"ApiName","AuthorizationCode":null,"RefreshToken":null,"UserName":"123","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"123","password":"***REDACTED***","scope":"ApiName","client_id":"ConsoleApp_ClientId","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-11-26 14:30:54.456 +01:00 [DBG] Getting claims for access token for client: ConsoleApp_ClientId
+2019-11-26 14:30:54.456 +01:00 [DBG] Getting claims for access token for subject: 1
+2019-11-26 14:30:54.460 +01:00 [DBG] Get profile called for subject 1 from client ConsoleApp_ClientId with claim types [] via ClaimsProviderAccessToken
+2019-11-26 14:30:54.462 +01:00 [DBG] Issued claims: []
+2019-11-26 14:30:54.482 +01:00 [INF] {"ClientId":"ConsoleApp_ClientId","ClientName":null,"RedirectUri":null,"Endpoint":"Token","SubjectId":"1","Scopes":"ApiName","GrantType":"password","Tokens":[{"TokenType":"access_token","TokenValue":"****d124","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLRIEJ9R0JMH:00000002","TimeStamp":"2019-11-26T13:30:54.0000000Z","ProcessId":4516,"LocalIpAddress":"127.0.0.1:9807","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-11-26 14:30:54.483 +01:00 [DBG] Token request success.
+2019-11-26 14:30:54.656 +01:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-11-26 14:30:54.657 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-11-26 14:30:54.657 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-11-26 14:30:54.660 +01:00 [DBG] Start discovery request
+2019-11-26 14:30:54.699 +01:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-11-26 14:30:54.699 +01:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-11-26 14:30:54.699 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-11-26 14:30:54.701 +01:00 [DBG] Start key discovery request
+2019-11-26 14:30:54.781 +01:00 [DBG] Request path /connect/introspect matched to endpoint type Introspection
+2019-11-26 14:30:54.781 +01:00 [DBG] Endpoint enabled: Introspection, successfully created handler: IdentityServer4.Endpoints.IntrospectionEndpoint
+2019-11-26 14:30:54.782 +01:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.IntrospectionEndpoint for /connect/introspect
+2019-11-26 14:30:54.787 +01:00 [DBG] Starting introspection request.
+2019-11-26 14:30:54.791 +01:00 [DBG] Start parsing Basic Authentication secret
+2019-11-26 14:30:54.791 +01:00 [DBG] Start parsing for secret in post body
+2019-11-26 14:30:54.791 +01:00 [DBG] Parser found secret: PostBodySecretParser
+2019-11-26 14:30:54.791 +01:00 [DBG] Secret id found: ApiName
+2019-11-26 14:30:54.792 +01:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-11-26 14:30:54.792 +01:00 [DBG] API resource validation success
+2019-11-26 14:30:54.792 +01:00 [INF] {"ApiName":"ApiName","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"API Authentication Success","EventType":"Success","Id":1020,"Message":null,"ActivityId":"0HLRIEJ9R0JMG:00000003","TimeStamp":"2019-11-26T13:30:54.0000000Z","ProcessId":4516,"LocalIpAddress":"127.0.0.1:9807","RemoteIpAddress":"::1","$type":"ApiAuthenticationSuccessEvent"}
+2019-11-26 14:30:54.794 +01:00 [DBG] Introspection request validation started.
+2019-11-26 14:30:54.809 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:30:54.812 +01:00 [DBG] client configuration validation for client ConsoleApp_ClientId succeeded.
+2019-11-26 14:30:54.812 +01:00 [DBG] IsActive called from: AccessTokenValidation
+2019-11-26 14:30:54.812 +01:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-11-26 14:30:54.813 +01:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Reference","ExpectedScope":null,"TokenHandle":"ea0bbcf1781e62712dcffcb5f14f29f86c8e9dfa630f170a98ee5f673348d124","JwtId":null,"Claims":{"iss":"http://localhost:5000","nbf":1574775054,"exp":1574778654,"aud":["http://localhost:5000/resources","ApiName"],"client_id":"ConsoleApp_ClientId","scope":"ApiName","sub":"1","auth_time":1574775054,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2019-11-26 14:30:54.813 +01:00 [DBG] Introspection request validation successful.
+2019-11-26 14:30:54.819 +01:00 [DBG] Creating introspection response for active token.
+2019-11-26 14:30:54.821 +01:00 [INF] {"ApiName":"ApiName","IsActive":true,"Token":"****d124","ClaimTypes":["iss","nbf","exp","aud","client_id","scope","sub","auth_time","idp","amr"],"TokenScopes":["ApiName"],"Category":"Token","Name":"Token Introspection Success","EventType":"Success","Id":2020,"Message":null,"ActivityId":"0HLRIEJ9R0JMG:00000003","TimeStamp":"2019-11-26T13:30:54.0000000Z","ProcessId":4516,"LocalIpAddress":"127.0.0.1:9807","RemoteIpAddress":"::1","$type":"TokenIntrospectionSuccessEvent"}
+2019-11-26 14:30:54.822 +01:00 [INF] Success token introspection. Token active: true, for API name: ApiName

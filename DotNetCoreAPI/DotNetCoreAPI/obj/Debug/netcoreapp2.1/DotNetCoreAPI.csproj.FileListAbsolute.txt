@@ -1,0 +1,16 @@
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\DotNetCoreAPI.deps.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\DotNetCoreAPI.runtimeconfig.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\DotNetCoreAPI.runtimeconfig.dev.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\DotNetCoreAPI.dll
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\bin\Debug\netcoreapp2.1\DotNetCoreAPI.pdb
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.csprojAssemblyReference.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.RazorAssemblyInfo.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.RazorAssemblyInfo.cs
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.AssemblyInfoInputs.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.AssemblyInfo.cs
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.dll
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\DotNetCoreAPI\DotNetCoreAPI\obj\Debug\netcoreapp2.1\DotNetCoreAPI.pdb

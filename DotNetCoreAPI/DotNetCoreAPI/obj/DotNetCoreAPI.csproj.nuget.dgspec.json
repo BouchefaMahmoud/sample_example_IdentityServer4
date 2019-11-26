@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Mahmoud.BOUCHEFA\\Desktop\\.net workspace\\identityserver4\\github ids\\IdentityServer4Tests\\Nouveau dossier\\DotNetCoreAPI\\DotNetCoreAPI\\DotNetCoreAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mahmoud.BOUCHEFA\\Desktop\\.net workspace\\identityserver4\\github ids\\IdentityServer4Tests\\Nouveau dossier\\DotNetCoreAPI\\DotNetCoreAPI\\DotNetCoreAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mahmoud.BOUCHEFA\\Desktop\\.net workspace\\identityserver4\\github ids\\IdentityServer4Tests\\Nouveau dossier\\DotNetCoreAPI\\DotNetCoreAPI\\DotNetCoreAPI.csproj",
+        "projectName": "DotNetCoreAPI",
+        "projectPath": "C:\\Users\\Mahmoud.BOUCHEFA\\Desktop\\.net workspace\\identityserver4\\github ids\\IdentityServer4Tests\\Nouveau dossier\\DotNetCoreAPI\\DotNetCoreAPI\\DotNetCoreAPI.csproj",
+        "packagesPath": "C:\\Users\\Mahmoud.BOUCHEFA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mahmoud.BOUCHEFA\\Desktop\\.net workspace\\identityserver4\\github ids\\IdentityServer4Tests\\Nouveau dossier\\DotNetCoreAPI\\DotNetCoreAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mahmoud.BOUCHEFA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[2.3.2, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

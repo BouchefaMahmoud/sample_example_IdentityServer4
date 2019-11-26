@@ -1,0 +1,10 @@
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\bin\Debug\netcoreapp2.2\Client.deps.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\bin\Debug\netcoreapp2.2\Client.runtimeconfig.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\bin\Debug\netcoreapp2.2\Client.runtimeconfig.dev.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\bin\Debug\netcoreapp2.2\Client.dll
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\bin\Debug\netcoreapp2.2\Client.pdb
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\obj\Debug\netcoreapp2.2\Client.csprojAssemblyReference.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\obj\Debug\netcoreapp2.2\Client.AssemblyInfoInputs.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\obj\Debug\netcoreapp2.2\Client.AssemblyInfo.cs
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\obj\Debug\netcoreapp2.2\Client.dll
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\Client\Client\obj\Debug\netcoreapp2.2\Client.pdb

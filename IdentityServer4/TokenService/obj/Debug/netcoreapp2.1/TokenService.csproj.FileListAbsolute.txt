@@ -1,0 +1,14 @@
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\bin\Debug\netcoreapp2.1\TokenService.deps.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\bin\Debug\netcoreapp2.1\TokenService.runtimeconfig.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\bin\Debug\netcoreapp2.1\TokenService.runtimeconfig.dev.json
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\bin\Debug\netcoreapp2.1\TokenService.dll
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\bin\Debug\netcoreapp2.1\TokenService.pdb
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.csprojAssemblyReference.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.RazorAssemblyInfo.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.RazorAssemblyInfo.cs
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.AssemblyInfoInputs.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.AssemblyInfo.cs
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.RazorTargetAssemblyInfo.cache
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.dll
+C:\Users\Mahmoud.BOUCHEFA\Desktop\.net workspace\identityserver4\github ids\IdentityServer4Tests\IdentityServer4\TokenService\obj\Debug\netcoreapp2.1\TokenService.pdb
